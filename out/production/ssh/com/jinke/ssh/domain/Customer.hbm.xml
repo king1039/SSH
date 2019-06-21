@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <!--建立类与表的映射-->
+    <!--如果类中的属性名和表中的字段名一直，column可以省略-->
+    <class name="com.jinke.ssh.domain.Customer" table="customer">
+        <!--建立类中的属性与表中的主键对应-->
+        <id name="id" column="id">
+            <generator class="native"/>
+        </id>
+
+        <!--建立类中的普通属性和标的字段的对应-->
+        <property name="name" column="name"/>
+        <property name="source" column="source"/>
+        <property name="industry" column="industry"/>
+        <property name="level" column="level"/>
+        <property name="phone" column="phone"/>
+        <property name="mobile" column="mobile"/>
+    </class>
+</hibernate-mapping>

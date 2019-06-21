@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+    <constant name="struts.action.extension" value="action"/>
+
+    <!--配置Action  方法一-->
+    <!--  <package name="ssh1" extends="struts-default" namespace="/">
+          <action name="customer_*" class="com.jinke.ssh.web.action.CustomerAction" method="{1}">
+              <allowed-methods>save</allowed-methods>
+          </action>
+      </package>-->
+
+    <!--配置action 方法二-->
+    <package name="ssh1" extends="struts-default" namespace="/">
+        <action name="customer_*" class="customerAction" method="{1}">
+            <allowed-methods>save</allowed-methods>
+        </action>
+    </package>
+</struts>

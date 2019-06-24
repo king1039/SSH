@@ -64,4 +64,17 @@ public class Customer {
     public void setMobile(String mobile) {
         this.mobile = mobile;
     }
+
+    @Override
+    public String toString() {
+        return "Customer{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", source='" + source + '\'' +
+                ", industry='" + industry + '\'' +
+                ", level='" + level + '\'' +
+                ", phone='" + phone + '\'' +
+                ", mobile='" + mobile + '\'' +
+                '}';
+    }
 }

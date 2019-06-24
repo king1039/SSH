@@ -33,4 +33,10 @@ public class CustomerAction extends ActionSupport implements ModelDriven<Custome
         customerService.save(customer);
         return NONE;
     }
+
+    public String findById() {
+        Customer customer = customerService.findById(2);
+        customer.setName("延迟");
+        return NONE;
+    }
 }

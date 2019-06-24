@@ -19,4 +19,6 @@
         <property name="phone" column="phone"/>
         <property name="mobile" column="mobile"/>
     </class>
+
+    <query name="queryAll">from Customer</query>
 </hibernate-mapping>

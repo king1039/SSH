@@ -17,7 +17,7 @@
     <!--配置action 方法二-->
     <package name="ssh1" extends="struts-default" namespace="/">
         <action name="customer_*" class="customerAction" method="{1}">
-            <allowed-methods>save</allowed-methods>
+            <allowed-methods>save,findById</allowed-methods>
         </action>
     </package>
 </struts>
